@@ -380,8 +380,8 @@ def plot_confusion(model, test_images: np.ndarray, test_labels: np.ndarray) -> N
 
 
 def plot_loss(history):
-    plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
+    plt.plot(history['loss'])
+    plt.plot(history['val_loss'])
     plt.legend(['train', 'test'])
 
 
